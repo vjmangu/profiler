@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="pb_service_label">Profiler</string>
-    <string name="pb_service_description">Profiler uses this to see which app is opening, so it can block apps that your active profile (Kid, Focus or Work) doesn\'t allow. It only reads the app\'s name — never screen content, typing or messages — and nothing leaves your phone.</string>
-</resources>
