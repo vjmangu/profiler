@@ -8,9 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    defaults:
-      run:
-        working-directory: profiler
     steps:
       - uses: actions/checkout@v4
 
@@ -23,9 +20,6 @@ jobs:
         with:
           channel: stable
           cache: true
-
-      - name: Show files
-        run: ls -la && ls -la packages/profiler_blocker
 
       - name: Flutter version
         run: flutter --version
@@ -57,5 +51,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: profiler-debug-apk
-          path: profiler/build/app/outputs/flutter-apk/app-debug.apk
+          path: build/app/outputs/flutter-apk/app-debug.apk
           retention-days: 14
