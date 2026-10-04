@@ -1,0 +1,19 @@
+name: profiler_blocker
+description: Native app blocking for Profiler (Android Accessibility service).
+version: 0.1.0
+publish_to: 'none'
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.vamsee.profiler_blocker
+        pluginClass: ProfilerBlockerPlugin
